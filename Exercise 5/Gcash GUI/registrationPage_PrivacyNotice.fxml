@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Copyright (c) 2017, Gluon and/or its affiliates.
+    All rights reserved. Use is subject to license terms.
+
+    This file is available and licensed under the following license:
+
+    Redistribution and use in source and binary forms, with or without
+    modification, are permitted provided that the following conditions
+    are met:
+
+   - Redistributions of source code must retain the above copyright
+     notice, this list of conditions and the following disclaimer.
+   - Redistributions in binary form must reproduce the above copyright
+     notice, this list of conditions and the following disclaimer in
+     the documentation and/or other materials provided with the distribution.
+   - Neither the name of Oracle Corporation and Gluon nor the names of its
+     contributors may be used to endorse or promote products derived
+     from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import com.gluonhq.charm.glisten.mvc.View?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<View maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="335.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <View maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="335.0">
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <AnchorPane prefHeight="57.0" prefWidth="335.0" style="-fx-background-color: #1a72fa;">
+                     <children>
+                        <Label layoutX="94.0" layoutY="20.0" style="-fx-text-fill: #ffffff;" text="REGISTRATION" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="19.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="38.0" fitWidth="50.0" layoutX="14.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="14.0" layoutY="21.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../Downloads/back_btn.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutY="56.0" prefHeight="544.0" prefWidth="335.0">
+                     <children>
+                        <Label layoutX="27.0" layoutY="36.0" text="Privacy Notice">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="btn_next" layoutX="230.0" layoutY="486.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="78.0" style="-fx-background-radius: 50px; -fx-font-weight: bold; -fx-font-family: Arial Rounded MT Bold; -fx-background-color: #0053ca;" text="Submit" />
+                        <Label layoutX="139.0" layoutY="525.0" style="-fx-text-fill: #70baf7;" text="v5.83.0:998">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="10.0" />
+                           </font>
+                        </Label>
+                        <Text layoutX="76.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: black;" text="I confirm that the information I have provided is true, accurate, and complete. I understand that providing false or misleading information may result in account suspension or legal consequences." wrappingWidth="219.52670288085938">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="11.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="76.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: black;" text="By checking this box, you agree to allow GCash to collect, process, and store your personal information in accordance with its Privacy Policy. You understand that your data may be used for identity verification, fraud prevention, and service improvements." wrappingWidth="219.52670288085938">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="11.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="76.0" layoutY="298.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: black;" text="By checking this box, you agree to receive updates, promotions, and important notifications from GCash via email. You can unsubscribe at any time through your account settings or by following the instructions in our emails." wrappingWidth="219.52670288085938">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="11.0" />
+                           </font>
+                        </Text>
+                        <CheckBox layoutX="36.0" layoutY="92.0" mnemonicParsing="false">
+                           <font>
+                              <Font size="8.0" />
+                           </font>
+                        </CheckBox>
+                        <CheckBox layoutX="36.0" layoutY="197.0" mnemonicParsing="false">
+                           <font>
+                              <Font size="8.0" />
+                           </font>
+                        </CheckBox>
+                        <CheckBox layoutX="36.0" layoutY="313.0" mnemonicParsing="false">
+                           <font>
+                              <Font size="8.0" />
+                           </font>
+                        </CheckBox>
+                        <ImageView fitHeight="131.0" fitWidth="192.0" layoutX="14.0" layoutY="385.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../OneDrive/Pictures/Screenshots/Screenshot%202025-02-05%20222438.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </View>
+   </children>
+</View>

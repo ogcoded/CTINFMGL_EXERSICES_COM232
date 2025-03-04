@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Copyright (c) 2017, Gluon and/or its affiliates.
+    All rights reserved. Use is subject to license terms.
+
+    This file is available and licensed under the following license:
+
+    Redistribution and use in source and binary forms, with or without
+    modification, are permitted provided that the following conditions
+    are met:
+
+   - Redistributions of source code must retain the above copyright
+     notice, this list of conditions and the following disclaimer.
+   - Redistributions in binary form must reproduce the above copyright
+     notice, this list of conditions and the following disclaimer in
+     the documentation and/or other materials provided with the distribution.
+   - Neither the name of Oracle Corporation and Gluon nor the names of its
+     contributors may be used to endorse or promote products derived
+     from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import com.gluonhq.charm.glisten.mvc.View?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<View maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="335.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <AnchorPane prefHeight="55.0" prefWidth="335.0" style="-fx-background-color: #1a72fa;">
+               <children>
+                  <Label layoutX="94.0" layoutY="16.0" style="-fx-text-fill: #ffffff;" text="REGISTRATION" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="19.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="38.0" fitWidth="50.0" layoutX="14.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="14.0" layoutY="21.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Downloads/back_btn.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutY="56.0" prefHeight="544.0" prefWidth="335.0">
+               <children>
+                  <Label layoutX="27.0" layoutY="36.0" text="Mobile Number">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="11.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="27.0" layoutY="158.0" text="First Name">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="11.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="27.0" layoutY="218.0" text="Last Name">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="11.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="29.0" layoutY="97.0" text="Email Address">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="11.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="tf_mobileNumber" layoutX="44.0" layoutY="59.0" prefHeight="26.0" prefWidth="246.0" promptText="0912 345 6789" style="-fx-prompt-text-fill: #0053ca; -fx-font-size: 15; -fx-font-weight: bold; -fx-text-fill: #0053ca; -fx-text-weight: bold;">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="12.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="tf_emailAddress" layoutX="44.0" layoutY="119.0" prefHeight="26.0" prefWidth="246.0" promptText="juandelacruz@email.com" style="-fx-prompt-text-fill: #0053ca; -fx-font-weight: bold; -fx-text-fill: #0053ca;">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="12.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="tf_firstName" layoutX="44.0" layoutY="179.0" prefHeight="26.0" prefWidth="246.0" promptText="Juan" style="-fx-prompt-text-fill: #0053ca; -fx-font-weight: bold; -fx-text-fill: #0053ca;">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="12.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="tf_lastName" layoutX="44.0" layoutY="237.0" prefHeight="26.0" prefWidth="246.0" promptText="Cruz" style="-fx-prompt-text-fill: #0053ca; -fx-font-weight: bold; -fx-text-fill: #0053ca;">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="12.0" />
+                     </font>
+                  </TextField>
+                  <DatePicker fx:id="dp_birthDate" layoutX="44.0" layoutY="294.0" prefHeight="26.0" prefWidth="246.0" />
+                  <Label layoutX="30.0" layoutY="272.0" text="Birthdate">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="11.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="27.0" layoutY="331.0" text="Nationality">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="11.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="tf_nationality" layoutX="44.0" layoutY="351.0" prefHeight="26.0" prefWidth="246.0" promptText="Filipino" style="-fx-prompt-text-fill: #0053ca; -fx-font-weight: bold; -fx-text-fill: #0053ca;">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="12.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="28.0" layoutY="393.0" text="Home Address">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="11.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="tf_homeAddress" layoutX="44.0" layoutY="418.0" prefHeight="26.0" prefWidth="246.0" promptText="Quezon" style="-fx-prompt-text-fill: #0053ca; -fx-font-weight: bold; -fx-text-fill: #0053ca;">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="12.0" />
+                     </font>
+                  </TextField>
+                  <Button fx:id="btn_next" layoutX="230.0" layoutY="486.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="78.0" style="-fx-background-radius: 50px; -fx-font-weight: bold; -fx-font-family: Arial Rounded MT Bold; -fx-background-color: #0053ca;" text="Next" />
+                  <Label layoutX="139.0" layoutY="525.0" style="-fx-text-fill: #70baf7;" text="v5.83.0:998">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="10.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</View>
